@@ -30,7 +30,8 @@ Using a predefined template, which can be setup on the front end or via api, a P
 
 The BODY of the post should contain the data to template in, as well as the receipient info. 
 
-```{
+```
+{
   "entity_id" : "YOUR_CUSTOMER_NUMBER_123", 
   "reference" : "ORDER_2343748034", 
   "message": {
@@ -48,7 +49,9 @@ The BODY of the post should contain the data to template in, as well as the rece
     "voucherCode": "23042390483"
   },
   "priority": "Normal"
-}```
+}
+
+```
 
 The object in the `data` field is determined by the fields in the template - ie. there is no standard field set, it is dynamically created. 
 
