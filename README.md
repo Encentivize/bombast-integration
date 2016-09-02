@@ -75,6 +75,11 @@ For example
 
 `skip` and `limit` can be used for paging - by default the first 50 results are returned. 
 
+Sorting and ordering is also supported. for example, to return the last updated messages for a customer ordered by date sent descending, we can use : 
+
+`$BASE_URL/{bombastName}/messages?entity_id=YOUR_CUSTOMER_NUMBER_123&sort=field-currentStatusDate`
+
+
 ## Resending messages
 
 To resend a message, you can simply POST to  the `/resend` route of a message. 
