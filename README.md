@@ -67,7 +67,7 @@ To find messages, you can perform a GET operation with A number of query string 
 
 For example
 
-```$BASE_URL/{tenant}/messages?entity_id=YOUR_CUSTOMER_NUMBER_123&limit=100&skip=0```
+`$BASE_URL/{tenant}/messages?entity_id=YOUR_CUSTOMER_NUMBER_123&limit=100&skip=0`
 
 `skip` and `limit` can be used for paging - by default the first 50 results are returned. 
 
