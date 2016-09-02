@@ -1,10 +1,9 @@
 # Bombast
 
-Bombast is a template drive communication app. It can send email and SMS communication. 
+Bombast is a template drive communications app. It can send via email and SMS channels. 
 Templates are set up, using [Handlebars](http://handlebarsjs.com/) syntax, and messages can be sent against these templates, with receipient specific data rendered into the template. 
 
 Bombast provides features such as resend, receipient (entity) and message reference tracking. 
-
 
 ## API
 
@@ -24,11 +23,11 @@ This authentication header must be provided on every request to the api. If you 
 
 ### Sending using a template
 
-Using a predefined template, which can be setup on the front end or via api, a POST to the path : 
+Using a predefined template, which can be setup on the front end or via api, messages can be sent via a POST to the path : 
 
 `$BASE_URL/{bombastName}/messageTemplates/{templateName}/messages`
 
-The BODY of the post should contain the data to template in, as well as the receipient info. 
+The BODY of the post should contain the `data` to template in, as well as the receipient info in the `message` object. 
 
 ```
 {
@@ -53,7 +52,7 @@ The BODY of the post should contain the data to template in, as well as the rece
 
 ```
 
-The object in the `data` field is determined by the fields in the template - ie. there is no standard field set, it is dynamically created. 
+The fields in the `data` object is determined by the fields in the template - ie. there is no standard field set, it is dynamically created. 
 
 `entity_id` is optional, but can be used to store a unique identifier for the receipient. This is helpful to find all messages sent to a customer, for example on dashboards or client service. 
 
@@ -78,7 +77,6 @@ For example
 Sorting and ordering is also supported. for example, to return the last updated messages for a customer ordered by date sent descending, we can use : 
 
 `$BASE_URL/{bombastName}/messages?entity_id=YOUR_CUSTOMER_NUMBER_123&sort=field-currentStatusDate`
-
 
 ### Resending messages
 
