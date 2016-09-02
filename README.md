@@ -6,11 +6,11 @@ Templates are set up, using [Handlebars](http://handlebarsjs.com/) syntax, and m
 Bombast provides features such as resend, receipient (entity) and message reference tracking. 
 
 
-# API
+## API
 
-## Authentication
+### Authentication
 
-Bombast uses Basic Authentication on every request, combined with SSL. 
+Bombast uses [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) on every request, combined with SSL. 
 
 So, for example : 
 
@@ -22,7 +22,7 @@ header - Authorization: Basic dGVzdDp0ZXN0MTIzNDU=
 
 This authentication header must be provided on every request to the api. If you do not you will get a 401 Unauthorised response with "Un" in the body of the response.
 
-## Sending using a template
+### Sending using a template
 
 Using a predefined template, which can be setup on the front end or via api, a POST to the path : 
 
@@ -80,7 +80,7 @@ Sorting and ordering is also supported. for example, to return the last updated 
 `$BASE_URL/{bombastName}/messages?entity_id=YOUR_CUSTOMER_NUMBER_123&sort=field-currentStatusDate`
 
 
-## Resending messages
+### Resending messages
 
 To resend a message, you can simply POST to  the `/resend` route of a message. 
 
