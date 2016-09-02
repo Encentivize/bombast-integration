@@ -1,7 +1,7 @@
 # Bombast
 
 Bombast is a template drive communication app. It can send email and SMS communication. 
-Templates are set up, using (Handlebars)[http://handlebarsjs.com/] syntax, and messages can be sent against these templates, with receipient specific data rendered into the template. 
+Templates are set up, using [Handlebars](http://handlebarsjs.com/) syntax, and messages can be sent against these templates, with receipient specific data rendered into the template. 
 
 Bombast provides features such as resend, receipient (entity) and message reference tracking. 
 
