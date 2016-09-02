@@ -26,7 +26,7 @@ This authentication header must be provided on every request to the api. If you 
 
 Using a predefined template, which can be setup on the front end or via api, a POST to the path : 
 
-```$BASE_URL/{tenantName}/messageTemplates/{templateName}/messages```
+`$BASE_URL/{tenantName}/messageTemplates/{templateName}/messages`
 
 The BODY of the post should contain the data to template in, as well as the receipient info. 
 
