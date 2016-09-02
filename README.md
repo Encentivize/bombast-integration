@@ -63,6 +63,8 @@ If the request is successfull, an http `202` response will be returned, signifyi
 
 A document will also be sent back, containing the merged message, and the unique `_id` to use for reference. 
 
+The field `mergedMessage` is the final email and sms data that is sent to the receipient. 
+
 ## Searching messages
 
 To find messages, you can perform a GET operation with a number of query string parameters. The most likely are `reference` or `entity_id`. 
@@ -82,6 +84,7 @@ For example,
 `/{tenant}/messages/{message_id}/resend`
 
 This will resend with the same data as the original send.
+
 
 
 
